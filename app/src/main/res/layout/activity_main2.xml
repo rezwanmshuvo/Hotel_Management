@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.asus.hotel_management.Main2Activity">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tv1"
+    android:hint="Select Time"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Et1"
+        android:layout_below="@+id/tv1"
+        android:hint="Enter Item"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnBrk"
+        android:text="BreakFast"
+        android:layout_below="@+id/Et1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLnc"
+        android:layout_below="@+id/Et1"
+        android:layout_toRightOf="@+id/btnBrk"
+        android:text="Launch"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnDin"
+        android:layout_below="@+id/Et1"
+        android:layout_toRightOf="@+id/btnLnc"
+        android:text="Dinner" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvbrk"
+        android:text="Select Breakfast"
+        android:layout_below="@+id/btnDin"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinbrk"
+        android:layout_below="@+id/tvbrk"></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvlnc"
+        android:text="Select Launch"
+        android:layout_below="@+id/spinbrk"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinLnc"
+        android:layout_below="@+id/tvlnc"></Spinner>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvDin"
+        android:text="Select Dinner"
+        android:layout_below="@+id/spinLnc"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinDin"
+        android:layout_below="@+id/tvDin"></Spinner>
+
+</RelativeLayout>
